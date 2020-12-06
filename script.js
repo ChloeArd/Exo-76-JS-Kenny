@@ -25,13 +25,11 @@ document.getElementById('down').addEventListener('click',function() {
 });
 
 
-let bordure = document.getElementById('viewport');
+let bordure = document.getElementById('viewport') ;
 let kenny = document.getElementById('kenny');
 
 //Etape 2: Conditions pour empécher kenny de sortir des bordures.
-if (kenny === bordure) {
 
-}
 
 
 
@@ -47,11 +45,10 @@ bordure.append(zoneRouge);
 
 
 // Etape 4 et Etape 5: Message d'alerte en disant que kenny est mort et le replacer.
-if (kenny === zoneRouge) {
+if( zoneRouge === parseInt(50 + "px")) {
     alert("Kenny est mort");
     kenny.style.top = 200 + 'px';
     kenny.style.left = 200 + 'px';
-
 }
 
 //Etape 6: Nombre de fois que kenny est mort.
