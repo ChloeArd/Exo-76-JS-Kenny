@@ -29,7 +29,10 @@ let bordure = document.getElementById('viewport') ;
 let kenny = document.getElementById('kenny');
 
 //Etape 2: Conditions pour empécher kenny de sortir des bordures.
-
+let width = parseInt(bordure.style.width = 500 + "px")
+if ( kenny === width ) {
+    width = 0;
+}
 
 
 
@@ -52,7 +55,9 @@ if( zoneRouge === parseInt(50 + "px")) {
 }
 
 //Etape 6: Nombre de fois que kenny est mort.
-
+let mort = document.createElement('p');
+mort.innerHTML = "Mort: "
+document.body.append(mort)
 
 
 //Etape 7: Clavier pour déplacer kenny.
